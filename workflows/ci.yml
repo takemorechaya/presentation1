@@ -1,4 +1,4 @@
-name: CI Pipeline
+myaoname: CI Pipeline
 
 on:
   push:
@@ -22,6 +22,7 @@ jobs:
         pip install pytest
 
     - name: Run tests
-      run: |
+      run: myapp.py
+      run: test_myapp.py
         pytest
 
